@@ -5,7 +5,7 @@ var REMAP = (function(){
   let Remap = {};
 
   Remap.urlRequest = 'tests/remap.json';
-  Remap.storage = 'jose';
+  Remap.storage = 'ReMap';
   Remap.paths = [];
 
   Remap.doRequest = function(){

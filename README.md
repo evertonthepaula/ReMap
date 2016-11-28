@@ -2,7 +2,7 @@
 
 Simples gerenciamento e loading de scripts \".js\" automatico adiado e síncrono.
 
-> Observação importante: Este script é apenas uma prova de conceito, sem intuito algum de resolver problemas reais de desenvolvimento.
+> Observação importante: Este script é apenas uma prova de conceito que visa o aprimoramento pessoal sem intuito algum de resolver problemas reais de desenvolvimento.
 
 
 ### ReMap.json 
