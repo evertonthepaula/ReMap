@@ -1,2 +1,0 @@
- - mudar a forma de criar a storage session. 
- 	- Ao carregar o arquivos remap.json, quando encontrar uma configuração com * montar uma requisição para pegar todos os arquivos .js do diretório, então salvar a sessão já com todos os arquivos mapeados, este é, por essencia, o objetivo da sessão existir.
