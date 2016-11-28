@@ -1,0 +1,26 @@
+{
+  "name": "remap",
+  "version": "1.0.0",
+  "description": "Simples gerenciamento e loading de scripts \".js\" automatico adiado e síncrono.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evertonthepaula/ReMap.git"
+  },
+  "author": "\"Everton de Paula <evertothepaula@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evertonthepaula/ReMap/issues"
+  },
+  "homepage": "https://github.com/evertonthepaula/ReMap#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglyfly": "^1.4.2",
+    "jshint": "^2.9.4"
+  }
+}

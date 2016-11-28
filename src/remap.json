@@ -1,0 +1,20 @@
+{
+  "source":"js/"
+  ,"map": [
+    {
+      "dir": "diretorio/"
+      ,"archives":[
+        "arquivo01.js"
+        ,"arquivos02.js"
+      ]
+    },
+    {
+      "dir": ""
+      ,"archives":[
+        "arquivo01.js"
+        ,"arquivos02.js"
+      ]
+    }
+  ]
+
+}
