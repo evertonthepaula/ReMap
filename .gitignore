@@ -2,3 +2,4 @@ node_modules/
 tests/
 package.json
 gulpfile.js
+.gitignore
