@@ -3,17 +3,20 @@ const REMAP = (function(){
     "use strict";
 
     let Remap = {};
-    Remap.urlRequest = 'src/remap.json';
-    Remap.storage = 'ReMap';
-    Remap.paths = [];
 
+    Remap.options = {
+        urlRequest : 'src/remap.json'
+        ,storage : 'ReMap'
+    };
+
+    Remap.paths = [];
 
     Remap.doRequest = function(){
 
         return new Promise( function(resolve,reject){
 
             let request = new XMLHttpRequest();
-            request.open('GET', Remap.urlRequest );
+            request.open('GET', Remap.options.urlRequest );
 
             request.onreadystatechange = function()
             {
@@ -21,14 +24,14 @@ const REMAP = (function(){
                 if (this.status != 200) {
 
                     reject( new Error('Erro durante o carregamento: ' + request.statusText) );
-                
+
                 }
 
                 if(this.readyState == 4) {
 
                     let file = this.responseText;
                     resolve(file);
-                    
+
                 }
 
             };
@@ -42,7 +45,7 @@ const REMAP = (function(){
 
     Remap.mapRoute = function(){
 
-        let file = this.getStorage(this.storage);
+        let file = this.getStorage(Remap.options.storage);
 
         file = JSON.parse(file);
 
@@ -59,7 +62,7 @@ const REMAP = (function(){
 
     Remap.storageFile = function(file){
 
-        sessionStorage.setItem(this.storage, file);
+        sessionStorage.setItem(Remap.options.storage, file);
 
     };
 
@@ -124,12 +127,11 @@ const REMAP = (function(){
 
   return {
     configHandleJson : Remap.configHandleJson
+    ,options: Remap.options
   };
 
 })();
 
 window.onload = function(){
-
     REMAP.configHandleJson();
-
 }
